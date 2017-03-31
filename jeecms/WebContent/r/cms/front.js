@@ -149,6 +149,7 @@ Cms.attachment = function(base, contentId, n, prefix) {
  */
 Cms.comment = function(callback, form) {
 	form = form || "commentForm";
+	alert(validate);
 	$("#" + form).validate( {
 		submitHandler : function(form) {
 			$(form).ajaxSubmit( {
